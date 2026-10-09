@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Internee.pk Secure File Share</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="card">
+<span class="badge">🔒 End-to-end encrypted</span>
+<h1>Secure File Share</h1><p class="sub">Files are encrypted in your browser before upload. Max {{ max_mb }} MB.</p>
+<label>Access token</label><input id="token" type="password" autocomplete="off">
+<label>File</label><input id="file" type="file">
+<div class="row"><div><label>Expires in (hours)</label><input id="hours" type="number" value="24" min="1" max="168"></div>
+<div><label>Max downloads</label><input id="maxdl" type="number" value="5" min="1" max="100"></div></div>
+<button id="go">Encrypt &amp; Upload</button><div id="status"></div>
+</div><script type="module" src="/static/upload.js"></script></body></html>
